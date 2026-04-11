@@ -6,14 +6,13 @@
 **Repositório/Commit base:** [https://github.com/ld1-projetos/atividade-semana-05-ula4-cic]
 **Arquivo Logisim:** ULA4_core.circ  
 **Milestone da semana:** M3 - Unidade de Controle e Minimização com Mapa de Karnaugh (K-map)
+
 ---
 
 ## 1) Objetivo do encontro
-
 Utilizar o Mapa de Karnaugh como método gráfico para a minimização de expressões booleanas da unidade de controle.
 
 ## 2) O que foi feito
-
 * 
 * 
 
