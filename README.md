@@ -30,15 +30,6 @@
 
 ## Mapa de Karnaugh (K-Map)
 
-Após a análise do Mapa de Karnaugh para o sinal `valid_OP`, identificamos que o bit **OP[0]** não influencia o resultado, permitindo a simplificação do circuito.
-
-**Expressão Booleana Minimizada:**
-`valid_OP = (NOT OP[2] AND OP[1]) OR (OP[2] AND NOT OP[1])`
-
-Esta expressão corresponde logicamente a uma porta **XOR** entre OP[2] e OP[1].*
-
-## Justificativa de Minimização e Custo (SOP vs POS)
-
 A análise do Mapa de Karnaugh para o sinal `valid_OP` revelou que a variável $OP_0$ não afeta o resultado final.
 
 * **SOP (Soma de Produtos):** $valid\_OP = (\overline{OP_1} \cdot OP_2) + (OP_1 \cdot \overline{OP_2})$
