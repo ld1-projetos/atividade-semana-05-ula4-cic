@@ -32,4 +32,14 @@ Padronizar o registro de casos de teste para a validação da unidade de control
 * **Minimização Aplicada (Mapa de Karnaugh):** * **1. Módulo op_select_SOP:** A lógica de decodificação foi projetada e agrupada através de Mapas de Karnaugh para mapear cada mintermo exclusivo das operações de forma simplificada.
 * **2. Módulo op_select_POS:** O K-map foi utilizado para obter o mínimo SOP e mínimo POS da mesma função, ajudando a escolher a implementação "mais barata" (com menos portas). A análise revelou que a variável `OP[0]` não altera o resultado. A lógica foi otimizada para o uso de apenas **1 porta XOR** entre `OP[1]` e `OP[2]`, substituindo 5 portas básicas e reduzindo o custo de hardware.
 
-## 4) Tabela de casos de teste (Controle SOP e POS)
+### 4) Testes de Validação de Instrução (POS / XOR)
+
+Nesta etapa, validamos se a flag `valid_OP` identifica corretamente as instruções. Como o circuito foi minimizado para uma porta XOR, o bit **OP0** não interfere no resultado.
+
+| ID | OP (bin) | Resultado Esperado | valid_OP (Real) | Status | Evidência | Obs/Justificativa |
+| :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| TC-POS-0 | 011 | 0 | 0 | **PASS** | ![Evidencia 0](../evidencias/testesop0.png) | OP 3: Instrução INVÁLIDA. |
+| TC-POS-1 | 110 | 1 | 1 | **PASS** | ![Evidencia 1](../evidencias/testesop1.png) | OP 6: Instrução VÁLIDA. |
+| TC-POS-2 | 000 | 0 | 0 | **PASS** | ![Evidencia 2](../evidencias/testesop2.png) | OP 0: Instrução INVÁLIDA. |
+| TC-POS-3 | 001 | 1 | 1 | **PASS** | ![Evidencia 3](../evidencias/testesop3.png) | OP 1: Instrução VÁLIDA. |
+
