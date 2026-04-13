@@ -10,7 +10,7 @@
 ---
 
 ## 1) Objetivo do encontro
-Utilizar o Mapa de Karnaugh como método gráfico para a minimização de expressões booleanas da unidade de controle.
+* Utilizar o Mapa de Karnaugh como método gráfico para a minimização de expressões booleanas da unidade de controle.
 
 ## 2) O que foi feito
 * Derivamos as expressões booleanas para a flag de controle `valid_OP` utilizando o Mapa de Karnaugh (K-map) de 3 variáveis.
