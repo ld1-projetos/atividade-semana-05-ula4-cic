@@ -30,6 +30,6 @@ Padronizar o registro de casos de teste para a validação da unidade de control
 
 * **ULA4_core utiliza:** `op_select_SOP`, `op_select_POS`, `logic4_v2`.
 * **Minimização Aplicada (Mapa de Karnaugh):** * **1. Módulo op_select_SOP:** A lógica de decodificação foi projetada e agrupada através de Mapas de Karnaugh para mapear cada mintermo exclusivo das operações de forma simplificada.
-  * **2. Módulo op_select_POS:** O K-map foi utilizado para obter o mínimo SOP e mínimo POS da mesma função, ajudando a escolher a implementação "mais barata" (com menos portas). A análise revelou que a variável `OP[0]` não altera o resultado. A lógica foi otimizada para o uso de apenas **1 porta XOR** entre `OP[1]` e `OP[2]`, substituindo 5 portas básicas e reduzindo o custo de hardware.
+* **2. Módulo op_select_POS:** O K-map foi utilizado para obter o mínimo SOP e mínimo POS da mesma função, ajudando a escolher a implementação "mais barata" (com menos portas). A análise revelou que a variável `OP[0]` não altera o resultado. A lógica foi otimizada para o uso de apenas **1 porta XOR** entre `OP[1]` e `OP[2]`, substituindo 5 portas básicas e reduzindo o custo de hardware.
 
 ## 4) Tabela de casos de teste (Controle SOP e POS)
