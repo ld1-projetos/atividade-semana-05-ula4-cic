@@ -36,3 +36,4 @@ A análise do Mapa de Karnaugh para o sinal `valid_OP` revelou que a variável $
 * **POS (Produto de Somas):** $valid\_OP = (OP_1 + OP_2) \cdot (\overline{OP_1} + \overline{OP_2})$
 
 Se implementadas exclusivamente com portas lógicas básicas (AND, OR, NOT), ambas as formas exigiriam um total de 5 portas. No entanto, nota-se que ambas as expressões booleanas representam matematicamente a função lógica **Ou Exclusivo (XOR)**. Sendo assim, a implementação final adotada no Logisim utilizou apenas **1 porta XOR** conectada aos bits $OP_1$ e $OP_2$. Essa decisão garante a maior otimização possível, entregando o menor custo de componentes e a menor complexidade de roteamento de fios para a Unidade de Controle.
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-_C12DB3)
